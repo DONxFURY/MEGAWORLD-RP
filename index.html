@@ -16,8 +16,20 @@
         header {
             text-align: center;
             padding: 50px;
-            background: rgba(0,0,0,0.6);
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
             box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 0;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
         }
         header h1 {
             font-size: 64px;
@@ -175,7 +187,7 @@
         <h2>Server Gallery</h2>
         <div class="gallery">
             <img src="https://via.placeholder.com/300x200" alt="City View">
-            <img src="https://via.placeholder.com/300x200" alt="Police Patrol">
+            <img src="https://media.discordapp.net/attachments/1380101171250991185/1382112175098953859/image.png?ex=684e9504&is=684d4384&hm=ddfa045a6acdad05119d0b7fec13af1ff056416d2fc383a1e605e6ec1d337c36&=&format=webp&quality=lossless&width=1531&height=703" alt="Police Patrol">
             <img src="https://via.placeholder.com/300x200" alt="RP Scene">
             <img src="https://via.placeholder.com/300x200" alt="Custom Vehicles">
         </div>
